@@ -21,7 +21,10 @@
                 {{ message }}
             </h1>
 
-            <img src="Beginner - Vue 2.png">
+            <div v-bind:class="vueimg">
+                <img src="Beginner - Vue 2.png" v-bind:class="vueimgcolor">
+            </div>
+
 
 
         </div>
