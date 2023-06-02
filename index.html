@@ -24,11 +24,13 @@
                 {{ message }}
             </h1>
 
-            <button type="button" class="btn btn-dark" v-bind:class="buttonstart" @click="funzione"><i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></button>
+            <button type="button" class="btn btn-dark" v-bind:class="buttonstart" @click="funzione">What if...Click</button>
 
             <h2 v-bind:class="discover">
                 {{ info }}
             </h2>
+
+            <button type="button" class="btn btn-dark" v-bind:class="buttonfreccia" @click="freccia"><i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></button>
 
             <div v-bind:class="vueimg">
                 <img src="cover-Vue.js.png" v-bind:class="vueimgcolor">
