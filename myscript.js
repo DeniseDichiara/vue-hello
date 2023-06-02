@@ -10,7 +10,7 @@ const { createApp } = Vue
                         discover : '',
                         buttonstart : 'ms-3',
                         vueimg : 'd-flex justify-content-center',
-                        vueimgcolor : 'mt-5',
+                        vueimgcolor : 'd-none',
                         
                     }
                 },
@@ -19,6 +19,7 @@ const { createApp } = Vue
                     funzione(){
                         this.info = 'Discover Vue'
                         this.discover = 'text-white bg-dark p-3 text-center mt-2'
+                        this.vueimgcolor = 'd-block mt-5'
                     }
                 },
 
