@@ -17,7 +17,10 @@ const { createApp } = Vue
                         imgs2 : 'd-flex flex-row justify-content-center',
                         img1 : 'd-none',
                         img2 : 'd-none',
-                        magic : 'd-none'
+                        magic : 'd-none',
+                        done : '' ,
+                        fin : ''
+
                     }
                 },
 
@@ -38,6 +41,16 @@ const { createApp } = Vue
                         this.magic = 'd-block mt-3 d-flex justify-content-center'
                         this.vueslides = 'd-none'
                     },
+                    wandmagic(){
+                        this.magic = 'd-none'
+                        this.done = 'text-white bg-success p-3 text-center mt-5'
+                        this.fin = 'You did it !! You did the magic !!'
+                        this.img1 = 'd-none'
+                        this.info = ''
+                        this.discover = ''
+                        this.buttonstart = 'd-none'
+                        this.buttonfreccia = 'd-none'
+                    }
                 },
 
             }).mount ('#app')
