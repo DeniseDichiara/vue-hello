@@ -10,9 +10,13 @@ const { createApp } = Vue
                         discover : '',
                         buttonstart : 'ms-3',
                         buttonfreccia : 'd-none',
-                        vueimg : 'd-flex justify-content-center',
+                        vueslides : 'd-none',
+                        vueimg : 'd-flex flex-row justify-content-center',
                         vueimgcolor : 'd-none',
-                        
+                        imgs1 : 'd-flex flex-row justify-content-center',
+                        imgs2 : 'd-flex flex-row justify-content-center',
+                        img1 : 'd-none',
+                        img2 : 'd-none'
                     }
                 },
 
@@ -24,9 +28,13 @@ const { createApp } = Vue
                         
                     },
                     freccia(){
-                        this.vueimgcolor = 'd-block mt-3'
-                    }
+                        this.vueslides = 'd-block mt-3 d-flex justify-content-center'
+                        this.vueimgcolor = 'd-block mt-3 mb-3'
+                    },
+                    phone(){
+                        this.img1 = 'd-block mt-3 mb-3'
+                        this.vueimgcolor = 'd-none'
+                    },
                 },
-
 
             }).mount ('#app')
