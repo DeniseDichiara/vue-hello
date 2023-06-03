@@ -16,7 +16,8 @@ const { createApp } = Vue
                         imgs1 : 'd-flex flex-row justify-content-center',
                         imgs2 : 'd-flex flex-row justify-content-center',
                         img1 : 'd-none',
-                        img2 : 'd-none'
+                        img2 : 'd-none',
+                        magic : 'd-none'
                     }
                 },
 
@@ -34,6 +35,8 @@ const { createApp } = Vue
                     phone(){
                         this.img1 = 'd-block mt-3 mb-3'
                         this.vueimgcolor = 'd-none'
+                        this.magic = 'd-block mt-3 d-flex justify-content-center'
+                        this.vueslides = 'd-none'
                     },
                 },
 
