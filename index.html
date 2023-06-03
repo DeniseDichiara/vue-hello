@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> VUE INTRO</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--? FONT-AWESOME -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> VUE INTRO</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--* BOOTSTRAP-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--? FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="">
-    </head>
+    <!--* BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <body>
-        <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="">
+</head>
 
-        <div id="app">
-            <h1 class="text-magena" v-bind:class="classes">
-                {{ message }}
-            </h1>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
 
-            <button type="button" class="btn btn-dark" v-bind:class="buttonstart" @click="funzione">What if...Click</button>
+    <div id="app">
+        <h1 class="text-magena" v-bind:class="classes">
+            {{ message }}
+        </h1>
 
-            <h2 v-bind:class="discover">
-                {{ info }}
-            </h2>
+        <button type="button" class="btn btn-dark" v-bind:class="buttonstart" @click="funzione">What if...Click</button>
 
-            <button type="button" class="btn btn-dark" v-bind:class="buttonfreccia" @click="freccia">And click again<i class="fa-solid fa-arrow-down ps-2" style="color: #ffffff;"></i></button>
+        <h2 v-bind:class="discover">
+            {{ info }}
+        </h2>
 
-            <div v-bind:class="vueimg">
-                <img src="cover-Vue.js.png" v-bind:class="vueimgcolor">
-            </div>
-
-
-
-        </div>
+        <button type="button" class="btn btn-dark" v-bind:class="buttonfreccia" @click="freccia">And click again<i
+                class="fa-solid fa-arrow-down ps-2" style="color: #ffffff;"></i></button>
         
-        <script src="myscript.js"></script>
-    </body>
+        
+        <div v-bind:class="vueslides">
+            <button type="button" class="btn btn-outline-warning me-2"><i class="fa-solid fa-hat-wizard" style="color: #000000;" v-bind:class="buttonphone" @click="phone "></i></button>
+        </div>
+
+        <div v-bind:class="imgs1">
+            <img src="the-vuejs-master-class.jpeg" v-bind:class="img1">
+        </div>
+
+
+        <div v-bind:class="vueimg">
+            <img src="cover-Vue.js.png" v-bind:class="vueimgcolor">
+        </div>
+
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+
 </html>
